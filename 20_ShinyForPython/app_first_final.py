@@ -4,7 +4,7 @@ from shiny import App, render, ui
 
 app_ui = ui.page_fluid(
     ui.h2("Hello Shiny!"),
-    ui.input_slider("n", "N", 0, 100, 20),
+    ui.input_slider("n", "N", 0, 100, [15, 20]),
     ui.output_text_verbatim("txt"),
 )
 
